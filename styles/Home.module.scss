@@ -1,0 +1,29 @@
+@import "~foundation-sites/scss/foundation";
+
+.home {
+
+  &__container {
+    @include xy-grid-container();
+    @include xy-grid($direction: vertical);
+    min-height: 100vh;
+  }
+
+  &__header,
+  &__footer,
+  &__main {
+    @include xy-cell(12);
+  }
+
+  &__main {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  &__footer {
+    text-align: center;
+  }
+
+  &__title {
+    @include foundation-title-bar();
+  }
+}

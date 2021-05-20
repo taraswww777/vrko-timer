@@ -1,0 +1,52 @@
+@import "~foundation-sites/scss/foundation";
+
+.timer {
+  @include xy-grid();
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  &__danger {
+    @include button($background: $alert-color);
+    font-size: 1.5rem;
+  }
+
+  &__cell-dash,
+  &__cell-colon,
+  &__cell {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  &__cell {
+    border: 1px solid #000;
+  }
+
+  &__cell-dash {
+  }
+
+  &__cell-colon {
+  }
+
+  &__cell-space {
+    width: 10px;
+  }
+
+  &__cell-year {
+  }
+
+  &__cell-mouth {
+  }
+
+  &__cell-day {
+  }
+
+  &__cell-hour {
+  }
+
+  &__cell-minute {
+  }
+
+  &__cell-seconds {
+  }
+}
